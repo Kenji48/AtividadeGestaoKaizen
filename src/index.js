@@ -37,6 +37,9 @@ for (let key of map.keys()){
 
 
 const array = Array.from(map.values());
+let divApp = document.getElementById("app");
+
+divApp.innerHTML = array.join("<br />");;
 
 fetch('http://localhost:3000/dados', {
   method: 'POST',
